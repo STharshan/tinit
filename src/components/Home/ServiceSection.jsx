@@ -8,20 +8,20 @@ const services = [
   {
     title: "Car Window Tinting",
     desc: "Enhance your vehicle with our premium car window tinting service for superior heat rejection and privacy.",
-    image: "/carpaint.avif",
-    path: "/s1.png",
+    image: "/s1.png",
+    path: "/",
   },
   {
     title: "Car Wrapping",
     desc: "Transform the look of your vehicle with our custom car wrapping service in a range of colours and finishes.",
-    image: "/gray.avif",
-    path: "/s2.png",
+    image: "/s2.png",
+    path: "/",
   },
   {
     title: "Chameleon Tinting",
     desc: `Make a statement with our chameleon tinting service that changes colour with the light for a truly unique finish.`,
-    image: "/carmechanic.avif",
-    path: "/s3.png",
+    image: "/s3.png",
+    path: "/",
   },
 ];
 
