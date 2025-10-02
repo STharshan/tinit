@@ -8,19 +8,19 @@ const services = [
   {
     title: "Car Window Tinting",
     desc: "Enhance your vehicle with our premium car window tinting service for superior heat rejection and privacy.",
-    image: "/s1.png",
+    image: "/s.png",
     path: "/",
   },
   {
     title: "Car Wrapping",
     desc: "Transform the look of your vehicle with our custom car wrapping service in a range of colours and finishes.",
-    image: "/s2.png",
+    image: "/s.png",
     path: "/",
   },
   {
     title: "Chameleon Tinting",
     desc: `Make a statement with our chameleon tinting service that changes colour with the light for a truly unique finish.`,
-    image: "/s3.png",
+    image: "/s.png",
     path: "/",
   },
 ];
@@ -114,10 +114,14 @@ const ServiceSection = () => {
                 data-aos-delay={index * 150} // staggered animation for each card
               >
                 {/* Image */}
-                <img
+               <img
                   src={service.image}
                   alt={service.title}
                   className="absolute inset-0 w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "/logo.webp"; // fallback logo
+                  }}
                 />
 
                 {/* Overlay */}
